@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cloudiness</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="../index.html">Weather Data</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Plots
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
+					<li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+					<li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+					<li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>            
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="comparison.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="data.html">Data</a>
+				</li>
+			</ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container mt-md-5">
+		<div class="row">
+		  	<div class="col-md-8">
+				<div class="card">
+					<div class="card-body">
+						<h1>Cloudiness</h1>
+						<hr>
+						<div class="card-text">
+							<img src="../Visualizations/lat_vs_cloudiness.png" class="col-8 mb-3" style="display:block; margin:auto" alt="Latitude vs Cloudiness">
+							<p>
+								This scatter plot certainly is scattered! This visualization suggests there is no correlation between latitude and cloudiness.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h1>Visualizations</h1>
+						<hr>
+						<div class="row">
+							<div class="container1">
+								<a href="max_temp.html" class="thumbnail"><img class="col-md-5" src="../Visualizations/lat_vs_temp.png"></a>
+								<a href="cloudiness.html" class="thumbnail"><img class="col-md-5" style="border: 2px solid gray" src="../Visualizations/lat_vs_cloudiness.png"></a>
+								<a href="humidity.html" class="thumbnail"><img class="col-md-5" src="../Visualizations/lat_vs_humidity.png"></a>
+								<a href="wind_speed.html" class="thumbnail"><img class="col-md-5" src="../Visualizations/lat_vs_windspeed.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

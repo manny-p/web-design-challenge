@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather Dashboard</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html">Weather Data</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Plots
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="./Resources/max_temp.html">Max Temperature</a></li>
+					<li><a class="dropdown-item" href="./Resources/humidity.html">Humidity</a></li>
+					<li><a class="dropdown-item" href="./Resources/cloudiness.html">Cloudiness</a></li>
+					<li><a class="dropdown-item" href="./Resources/wind_speed.html">Wind Speed</a></li>
+				</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Resources/comparison.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Resources/data.html">Data</a>
+				</li>
+			</ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container mt-md-5">
+		<div class="row">
+		  	<div class="col-md-8">
+				<div class="card">
+					<div class="card-body">
+						<h1>Summary: Latitude vs. X</h1>
+						<hr>
+						<div class="card-text">
+							<img style="float:left;" width="300" src="Visualizations/lat_vs_temp.png">
+							<p>How does the weather change as one gets closer to the equator? To answer this, we generated a random sample of over 500 cities and pulled their weather data from the OpenWeatherMap API.</p>
+							<p>We focused on four weather factors: temperature, humidity, cloudiness, and wind speed. Once our data was cleaned, we began using Matplotlib to plot these factors vs. the respective city's latitude. </p>
+							<p>On this site, we provide the source data and visualizations created, in addition to describing what the visualizations tell us.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h1>Visualizations</h1>
+						<hr>
+						<div class="row">
+							<div class="container1">
+								<a href="./Resources/max_temp.html" class="thumbnail"><img class="col-md-5" src="./Visualizations/lat_vs_temp.png"></a>
+								<a href="./Resources/cloudiness.html" class="thumbnail"><img class="col-md-5" src="./Visualizations/lat_vs_cloudiness.png"></a>
+								<a href="./Resources/humidity.html" class="thumbnail"><img class="col-md-5" src="./Visualizations/lat_vs_humidity.png"></a>
+								<a href="./Resources/wind_speed.html" class="thumbnail"><img class="col-md-5" src="./Visualizations/lat_vs_windspeed.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
